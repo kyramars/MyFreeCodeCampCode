@@ -1,15 +1,16 @@
-function confirmEnding(str, target) {
-  // "Never give up and good luck will find you."
-  // -- Falcor
-  var ending = str.length - target.length; 
-  
+function titleCase(str) { 
+	var lowerStr = str.toLowerCase(); 
 
-  if (str.substr(ending) == target) {
-    return true; 
-  } else {
-    return false; 
+	var sentenceArray = lowerStr.split(" "); 
+
+	var finalArray = []; 
+
+	for (i = 0; i < sentenceArray.length; i++) {
+    for (j = 0; j < sentenceArray[i].length; j++) {
+      sentenceArray[i][0] = sentenceArray[i][0].replace(sentenceArray[i][0].toUpperCase); 
+    }   
   }
-  
+  return sentenceArray; 
 }
 
-confirmEnding("Bastian", "n");
+titleCase("I'm a little tea pot"); 

@@ -1,0 +1,91 @@
+body { padding-bottom: 70px; }
+
+.first-box { 
+  border: 2px solid black; 
+  height: 400px;
+  margin-top: 60px; 
+  margin-right: -15px;
+  margin-bottom: 20px;
+  margin-left: -15px;   
+}
+
+.first-box h1 {
+  text-align: center; 
+}
+
+.second-box { 
+  background-color: lightgrey;
+   
+  height: 400px; 
+  margin-bottom: 10px; 
+  margin-right: -15px; 
+  margin-left: -15px;
+}
+
+.second-box h1 {
+  text-align: center; 
+}
+.circle { 
+  height: 300px; 
+  width: 300px; 
+  float: right; 
+  margin-bottom: 20px; 
+  margin-right: 100px; 
+}
+  
+#about-para {
+ font-size: 20px; 
+ font-family: Garamond, serif; 
+ width: 50%;  
+ height: 300px; 
+ margin-left: 30px;  
+}
+.third-box { 
+  height: 400px; 
+  margin-bottom: 10px; 
+  margin-right: -15px; 
+  margin-left: -15px;
+}
+
+.third-box h1 {
+  text-align: center; 
+}
+#portfolio-rows {
+  padding-top: 30px; 
+  padding-right: 40px; 
+  padding-left: 40px; 
+ 
+}
+
+.thumbnail {
+  background-color: lightgrey; 
+  height: 100px;
+}
+.fourth-box { 
+  background-color: lightgrey; 
+  height: 400px; 
+  margin-bottom: 20px; 
+  margin-right: -15px; 
+  margin-left: -15px;
+}
+
+.fourth-box h1 {
+  text-align: center; 
+}
+
+#footer-menu {
+  height: 10%;  
+}
+#footer-menu p{ 
+  text-align: center;
+  text-indent: 45px; 
+  padding-top: 2px; 
+}
+
+#footer-list li { 
+  display: inline;
+}
+
+@media screen and (max-width: 700px) {
+    .circle {display:none;
+  }

@@ -1,0 +1,19 @@
+.message {
+  font: 30px bold, sans-serif; 
+}
+
+.messageAuthor { 
+  font: 20px bold, sans-serif; 
+  margin-bottom: 20px; 
+}
+
+.jumbotron {
+  width: 50%; 
+  margin-top: 10%; 
+  border-radius: 5px; 
+  padding: 30px 30px 30px 30px;
+}
+
+.btn {
+  margin: 5px 5px 5px 5px; 
+}

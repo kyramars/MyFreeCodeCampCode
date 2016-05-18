@@ -1,6 +1,5 @@
 $(document).ready(function() {
-
-var quotesArr = [
+  var quotesArr = [
 	{
 		quote: "You never know how strong you are until being strong is the only choice you have.",
 		author: "Bob Marley"
@@ -83,10 +82,33 @@ var quotesArr = [
 	},
 
 ]; //end of var quotes
-
-var colorsArr = ["#04FFB7", "#61E81E", "#FFDB17", "#E86E07", "#FF0931", "#FF355C", "#BF2B68", "#4C438E", "#012658", "#FF8B61"]; //end of var colors
-
-	$("#getMessage").on("click", function() {
-		$(".message").html("New Quote Should Go Here"); 
-	}); 
-}); 
+  var colorsArr = [ 
+    {color: "#04FFB7"}, 
+    {color: "#61E81E"}, 
+    {color: "#FFDB17"}, 
+    {color: "#E86E07"}, 
+    {color: "#FF0931"}, 
+    {color: "#FF355C"}, 
+    {color: "#BF2B68"}, 
+    {color: "#4C438E"}, 
+    {color: "#012658"}, 
+    {color: "#FF8B61"}
+  ]; //end of var colors
+  var quote; 
+  var quoteAuthor; 
+  var color; 
+  
+  $("#getMessage").on("click", function() {
+      var randomNumber = Math.floor(Math.random() * quotesArr.length); 
+      //var colorRandomNumber = Math.floor(Math.random() * quotesArr.length); 
+      
+        quote = quotesArr[randomNumber].quote; 
+        quoteAuthor = quotesArr[randomNumber].author;
+        //color = colorsArr[colorRandomNumber].color; 
+        
+        $(".message").html(quote);
+        $(".messageAuthor").html(quoteAuthor);  
+        //$(".body").css(color); 
+  }); //end of get quote button function
+  
+});  //end of document ready function 
